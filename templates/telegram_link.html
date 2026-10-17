@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}Link Telegram · ZerX Cloud{% endblock %}
+{% block content %}
+<section class="simple-page wrap"><div class="simple-card"><div class="telegram-large">✈</div><div class="eyebrow">SECURE ACCOUNT LINK</div><h1>Finish linking <span class="gradient-text">Telegram.</span></h1><p>Open the official Telegram bot link below. This one-time code expires in {{ expires }} minutes.</p><a class="button button-primary button-full" href="{{ deep_link }}" target="_blank" rel="noopener noreferrer">Open Telegram bot ↗</a><p class="subtle-note">Only link your own Telegram account. Never share this one-time link with anyone.</p><a class="text-link" href="{{ url_for('dashboard') }}">← Back to dashboard</a></div></section>
+{% endblock %}
